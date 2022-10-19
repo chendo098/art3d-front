@@ -1,13 +1,16 @@
-.loader-container {
-    position: relative;
+.loader {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height:100vh;
 }
 
 .spinner {
     border: 4px solid rgba(0,0,0,.1);
-    width: 36px;
-    height: 36px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    border-left-color: #09f;
+    border-left-color: rgba(214, 24, 205, 0.521);
     animation: spin 1s ease infinite;
     position: absolute;
 }
@@ -22,10 +25,11 @@
 }
 
 .spinner-logo {
-    width: 35px;
-    height: 35px;
+    margin-top: 2px;
+}
+
+.spinner-logo > img {
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
 }

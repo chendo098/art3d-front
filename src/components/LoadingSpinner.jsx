@@ -4,9 +4,11 @@ import icon from '../images/art3d_icon.jpg'
 
 const LoadingSpinner = () => {
   return (
-    <div className="loader-container">
+    <div className="loader">
         <div className="spinner"></div>
-        <img className="spinner-logo" src={icon} alt="" />
+        <div className="spinner-logo">
+          <img className="spinner-logo" src={icon} alt="" />
+        </div>
     </div>
   )
 }
